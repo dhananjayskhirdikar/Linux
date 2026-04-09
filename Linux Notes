@@ -1,0 +1,182 @@
+Introduction to Linux
+
+What is Linux?
+
+- Linux is an operating system, just like Windows or macOS, but it is free for anyone to use. You
+  can even see its source code and change it if you want. It was created in 1991 by Linus Torvalds.
+- To understand Linux easily, think of it as a system that helps your computer work. It connects
+  the hardware (like CPU, memory, keyboard) with the software (apps and programs).
+- At the center of Linux is the kernel. This is the most important part because it directly talks to
+  the hardware and controls everything.
+- Linux also comes with built-in tools (commands) that help you do tasks like creating files,
+  copying data, or searching text. These are called GNU tools and are mostly used through the
+  terminal.
+- There are also libraries, which are like ready-made code that programs use so developers don’t
+  have to write everything from scratch.
+- If you don’t like typing commands, Linux also has graphical interfaces called desktop
+  environments. These give you windows, icons, and menus, just like other operating systems.
+
+Where Linux is Used?
+
+- Linux is used in many places, even if you don’t notice it.
+- Most websites and online services run on Linux servers because it is stable and can handle heavy
+  work without crashing.
+- In cloud platforms like AWS or Google Cloud, Linux is widely used to run virtual machines and
+  applications.
+- If you are using an Android phone, you are already using Linux, because Android is built on the
+  Linux kernel.
+- Linux is also used in small devices like routers, smart TVs, and smart home devices because it is
+  lightweight and reliable.
+- Even supercomputers use Linux because it is powerful and efficient for large calculations.
+
+What is an Operating System (OS)?
+
+- An operating system is the main software that runs your computer.
+- It acts like a bridge between you and the hardware. Without it, your computer cannot run
+  programs.
+- When you open an app, the operating system decides how much memory it should use and when
+  it should run. It also allows multiple programs to run at the same time smoothly.
+- It organizes your files so you can store and find them easily.
+- It also controls devices like your keyboard, mouse, and internet connection.
+- Another important job is security. It makes sure only the right users can access certain files or
+  perform important actions.
+
+Linux Kernel:
+
+- The kernel is the core part of Linux.
+- It directly communicates with the hardware and manages everything happening inside the system.
+- Whenever a program needs something, like memory or access to a file, it asks the kernel. The
+  kernel then handles the request.
+- It decides which program should use the CPU and for how long.
+- It also manages memory, making sure programs don’t interfere with each other.
+- The kernel also works with device drivers so your system can use hardware like USB devices,
+  graphics cards, and networks.
+- Simply put, the kernel is the engine, and the operating system is the full car (engine + tools +
+  interface).
+
+Linux Kernel Type:
+
+- Linux uses something called a monolithic kernel.
+- This means most of the important system services run inside the kernel itself.
+- Because everything is connected closely, Linux can work very fast and efficiently.
+- It can also load extra features (like drivers) when needed without restarting the whole system.
+- However, if something goes wrong inside the kernel, it can affect the entire system.
+- There is another type called a microkernel, where services run separately. That design is more
+  stable but usually slower.
+- Linux focuses more on speed and performance, which is why it uses a monolithic kernel.
+
+Linux Characteristics:
+
+Open Source
+
+- Linux is open-source, which means anyone can see how it is built and even change it. This is one
+  of the biggest reasons why Linux is so popular.
+- Developers around the world continuously improve it, fix bugs, and add new features. Because
+  of this community support, Linux keeps getting better and more secure over time.
+- Another important thing is freedom. You are not locked into one version. You can customize
+  Linux the way you want or even create your own version based on your needs.
+
+Multi-user
+
+- Linux allows multiple users to use the same system at the same time without interfering with
+  each other.
+- Each user has their own account, files, and permissions. This means one user cannot randomly
+  access or change another user’s data.
+- There is also a special user called root, who has full control over the system. Regular users have
+  limited access, which helps protect the system from accidental or harmful changes.
+
+Useful Commands
+
+Command Why it is used:
+
+who   -->> Shows who is currently logged into the
+system   -->> id Displays user ID and group details
+groups   -->>  Shows which groups a user belongs to
+
+- This feature makes Linux perfect for servers where many users work on the same system.
+
+Multitasking
+
+- Linux can run many programs at the same time without slowing down or crashing.
+- For example, you can run a server, edit files, and download something all at once. The system
+  manages all these tasks in the background and gives each one a fair share of CPU time.
+- Even if one program stops working, it usually won’t affect others. This makes Linux very
+  reliable for heavy workloads.
+
+Portability
+
+- Linux can run on many different types of devices, from powerful computers to small gadgets.
+- The same Linux system can work on desktops, servers, smartphones, and even devices like
+  routers or smart TVs.
+- This is possible because Linux is designed to work with different hardware using drivers. So it
+  can easily adapt to new environments.
+
+Security
+
+- Linux is known for being very secure, mainly because of how it controls access.
+- Every file and program has permissions, which decide who can read, write, or execute it. This
+  prevents unauthorized access.
+- Only the root user can perform critical system changes. Regular users must ask for permission
+  (using special commands) to perform such tasks.
+- Linux also keeps processes separate, so if one program has an issue, it does not affect the whole
+  system.
+
+Stability
+
+- Linux is extremely stable and can run for a long time without restarting.
+- If one program crashes, the rest of the system usually keeps running without problems. This is
+  why Linux is widely used in servers and important systems.
+- It is designed to handle heavy workloads smoothly, making it reliable for long-term use.
+
+Linux Architecture
+
+Layered Structure
+
+- Linux is designed in layers. Each layer has its own job and works with the layer next to it.
+- This design makes the system easier to manage, more secure, and more stable.
+
+Hardware Layer
+
+- This is the physical part of the computer, like the CPU, memory, storage, and input/output
+  devices.
+- Linux itself does not directly depend on hardware. Instead, it uses drivers to communicate with
+  these components.
+
+Kernel Layer
+
+- The kernel is the core of Linux and controls everything happening in the system.
+- It manages processes, memory, devices, and files. Whenever a program needs something, it goes
+  through the kernel.
+- The kernel makes sure all parts of the system work together properly and efficiently.
+
+System Call Interface
+
+- Programs cannot directly access hardware. Instead, they request services from the kernel.
+- This is done through system calls, which act like a safe communication bridge between
+- applications and the kernel.
+- For example, when a program wants to open or read a file, it sends a request through this
+  interface, and the kernel handles it.
+
+Shell
+
+- The shell is where users interact with Linux using commands.
+- It takes your command, understands it, and tells the kernel what to do. Then it shows you the
+  result.
+
+Common Commands
+
+Command Why it is used
+
+ls   --->>>  Lists files and folders in the current directory
+pwd   --->>  Shows your current location in the system
+whoami  --->>  Displays the current logged-in user
+
+- The shell is very powerful because it also allows automation through scripts.
+
+User Space
+
+- This is where all applications run, like browsers, editors, and software tools.
+- Programs in this layer cannot directly affect the kernel, which helps keep the system safe.
+- If an application crashes, it usually stays within this layer and does not bring down the whole
+  system.
+
